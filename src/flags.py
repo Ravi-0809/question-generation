@@ -4,14 +4,16 @@ import tensorflow as tf
 # config
 tf.app.flags.DEFINE_boolean("testing", False, "Reduce model size for local testing")
 
-tf.app.flags.DEFINE_string("model_type", 'RL-S2S', "Model type code")
+# tf.app.flags.DEFINE_string("model_type", 'RL-S2S', "Model type code")
+
+tf.app.flags.DEFINE_string("model_type", 'SEQ2SEQ', "Model type code")
 
 tf.app.flags.DEFINE_boolean("restore", False, "Restore from existing chkpt?")
 tf.app.flags.DEFINE_string("restore_path", None, "Restore from existing chkpt?")
 
 
 tf.app.flags.DEFINE_boolean("policy_gradient", False, "Train using policy gradient?")
-tf.app.flags.DEFINE_boolean("glove_vocab", False, "Use glove to determine the top n words? Set false to use corpus")
+tf.app.flags.DEFINE_boolean("glove_vocab", True, "Use glove to determine the top n words? Set false to use corpus")
 tf.app.flags.DEFINE_boolean("embedding_loss", False, "Use a loss based on similarity between embeddings instead of XE")
 tf.app.flags.DEFINE_boolean("latent_switch", False, "When encoding the gold questions, use a many-hot representation to allow for full freedom in the switch variable")
 tf.app.flags.DEFINE_boolean("combine_vocab", False, "Combine pointer and shortlist vocabs in copy layer")
