@@ -35,7 +35,7 @@ tf.app.flags.DEFINE_integer("filter_max_tokens", 100, "Filter contexts down to a
 tf.app.flags.DEFINE_integer("max_context_len", 203, "Max context length. 768 for squad, 384 if filtered, 442 if filtered with window=1")
 tf.app.flags.DEFINE_integer("max_copy_size", 203, "Max size of copy vocab to limit output distribution. 768 or 384/442 for unfilt, 265 or 132 if filtered")
 
-tf.app.flags.DEFINE_integer("embedding_size", 200, "Dimensionality to use for learned word embeddings")
+tf.app.flags.DEFINE_integer("embedding_size", 300, "Dimensionality to use for learned word embeddings")
 tf.app.flags.DEFINE_integer("context_encoder_units", 768, "Number of hidden units for context encoder (ie 1st stage)")
 tf.app.flags.DEFINE_integer("answer_encoder_units", 768, "Number of hidden units for answer encoder (ie 2nd stage)")
 tf.app.flags.DEFINE_boolean("full_context_encoding", True, "Concat the context encoding with the answer encoding to give the encoder output")
