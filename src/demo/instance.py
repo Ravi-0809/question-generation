@@ -15,8 +15,8 @@ mem_limit=0.9
 
 class AQInstance():
     def __init__(self, vocab):
-        # self.model = Seq2SeqModel(vocab, training_mode=False)
-        self.model = RLModel(vocab, training_mode=False)
+        self.model = Seq2SeqModel(vocab, training_mode=False)
+        # self.model = RLModel(vocab, training_mode=False)
         with self.model.graph.as_default():
             self.model.ping = tf.constant("ack")
         # self.model = MaluubaModel(vocab, training_mode=False)
