@@ -1,7 +1,7 @@
 import sys,json,time,os,string,re
-sys.path.insert(0, "/Users/tom/Dropbox/msc-ml/project/src/")
-sys.path.insert(0, "/Users/tomhosking/Dropbox/msc-ml/project/src/")
-sys.path.insert(0, "/cs/student/msc/ml/2017/thosking/dev/msc-project/src/")
+# sys.path.insert(0, "/Users/tom/Dropbox/msc-ml/project/src/")
+# sys.path.insert(0, "/Users/tomhosking/Dropbox/msc-ml/project/src/")
+# sys.path.insert(0, "/cs/student/msc/ml/2017/thosking/dev/msc-project/src/")
 
 import tensorflow as tf
 import numpy as np
