@@ -26,13 +26,13 @@ class RLModel(Seq2SeqModel):
         if FLAGS.policy_gradient:
             print('Building and loading LM')
             self.lm = LstmLmInstance()
-            self.lm.load_from_chkpt(FLAGS.model_dir+'saved/lmtest')
+            self.lm.load_from_chkpt(FLAGS.model_dir+'lm')
 
             print('Building and loading QA model')
             # self.qa = MpcmQaInstance()
             # self.qa.load_from_chkpt(FLAGS.model_dir+'saved/qatest')
             self.qa = QANetInstance()
-            self.qa.load_from_chkpt(FLAGS.model_dir+'saved/qanet2')
+            self.qa.load_from_chkpt(FLAGS.model_dir+'qanet')
 
         with self.graph.as_default():
 
