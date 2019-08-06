@@ -148,7 +148,7 @@ def get_glove_vocab(path, size=2000, d=200, variant='6B', filter_to_squad=False)
             squad_words |= set(tokenise(triple[0]))
             squad_words |= set(tokenise(triple[1]))
             squad_words |= set(tokenise(triple[2]))
-    with open(path+'glove.'+variant+'/glove.'+variant+'.'+str(d)+'d.txt') as fp:
+    with open(path+'glove.'+variant+'/glove.'+variant+'.'+str(d)+'d.txt', encoding = 'utf-8') as fp:
         entries = fp.readlines()
     for i,row in enumerate(entries):
         if len(vocab)-4>= size and size > 0:
