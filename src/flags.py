@@ -77,8 +77,8 @@ tf.app.flags.DEFINE_float("bleu_weight", 0.0, "Loss multiplier for BLEU reward")
 tf.app.flags.DEFINE_float("pg_ml_weight", 1, "Loss multiplier for maximum likelihood when doing PG")
 
 
-tf.app.flags.DEFINE_float("disc_weight", 0.0, "Loss multiplier for discriminator")
-tf.app.flags.DEFINE_boolean("disc_train", False, "Jointly train the discriminator along with the generator")
+tf.app.flags.DEFINE_float("disc_weight", 0.5, "Loss multiplier for discriminator")
+tf.app.flags.DEFINE_boolean("disc_train", True, "Jointly train the discriminator along with the generator")
 
 # QA - MPCM hparams
 tf.app.flags.DEFINE_integer("qa_vocab_size", 20000, "QA system vocab size")

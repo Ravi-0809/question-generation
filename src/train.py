@@ -143,7 +143,7 @@ def main(_):
         #     qa_vocab=model.qa.vocab
         #     lm_vocab=model.lm.vocab
         if FLAGS.policy_gradient:
-            discriminator = DiscriminatorInstance(trainable=FLAGS.disc_train, path=disc_path)
+            discriminator = DiscriminatorInstance(trainable=FLAGS.disc_train, path=None)
     else:
         exit("Unrecognised model type: "+FLAGS.model_type)
 
