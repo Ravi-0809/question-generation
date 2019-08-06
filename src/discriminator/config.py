@@ -28,7 +28,8 @@ if not os.path.exists(os.path.join(os.getcwd(),dir_name)):
 if "CLUSTER" in os.environ.keys():
     target_dir = "/home/thosking/msc-project/models/saved/discriminator"
 else:
-    target_dir = "./models/saved/discriminator"
+    # target_dir = "./models/saved/discriminator"
+    target_dir = "./models/saved/qanet"
 
 log_dir = os.path.join(dir_name, "event")
 save_dir = os.path.join(dir_name, "model")
