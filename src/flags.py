@@ -17,9 +17,9 @@ tf.app.flags.DEFINE_boolean("latent_switch", False, "When encoding the gold ques
 tf.app.flags.DEFINE_boolean("combine_vocab", True, "Combine pointer and shortlist vocabs in copy layer")
 tf.app.flags.DEFINE_boolean("lr_schedule", False, "Adjust LR according to a (hard coded) schedule")
 
-tf.app.flags.DEFINE_integer("eval_freq", 1000, "Evaluate the model after this many steps")
+tf.app.flags.DEFINE_integer("eval_freq", 5000, "Evaluate the model after this many steps")
 tf.app.flags.DEFINE_integer("num_epochs", 25, "Train the model for this many epochs")
-tf.app.flags.DEFINE_integer("batch_size", 64, "Batch size")
+tf.app.flags.DEFINE_integer("batch_size", 32, "Batch size")
 tf.app.flags.DEFINE_integer("eval_batch_size", 16, "Batch size")
 tf.app.flags.DEFINE_string("data_path", './data/', "Path to dataset")
 tf.app.flags.DEFINE_string("log_dir", './logs/', "Path to logs")
