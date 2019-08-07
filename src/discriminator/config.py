@@ -109,7 +109,7 @@ flags.DEFINE_boolean("disc_is_bucket", False, "build bucket batch iterator or no
 # flags.DEFINE_integer("disc_batch_size", 32, "Batch size")
 # flags.DEFINE_integer("disc_num_steps", 60000, "Number of steps")
 flags.DEFINE_integer("disc_num_epochs", 20, "Number of steps")
-flags.DEFINE_integer("disc_checkpoint", 1000, "checkpoint to save and evaluate the model")
+flags.DEFINE_integer("disc_checkpoint", 5000, "checkpoint to save and evaluate the model")
 flags.DEFINE_integer("disc_period", 100, "period to save batch loss")
 flags.DEFINE_integer("disc_val_num_batches", 150, "Number of batches to evaluate the model")
 flags.DEFINE_float("disc_dropout", 0.3, "Dropout prob across the layers")
